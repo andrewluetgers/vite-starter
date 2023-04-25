@@ -1,6 +1,5 @@
 import {useState} from 'react'
-import reactLogo from './assets/react.svg'
-import {ReactComponent as ViteLogo} from '../public/vite.svg'
+import {ReactComponent as ReactLogo} from './assets/react.svg'
 import {css} from 'cssed/macro'
 import './App.css'
 
@@ -12,10 +11,11 @@ export default function App() {
 		<div className={`app ${styles}`}>
 			<div>
 				<a href="https://vitejs.dev" target="_blank">
-					<ViteLogo className="logo" />
+					<img src="/vite.svg" className="logo vite" />
+
 				</a>
 				<a href="https://react.dev" target="_blank">
-					<img src={reactLogo} className="logo react" alt="React logo" />
+					<ReactLogo className="logo react" />
 				</a>
 			</div>
 
