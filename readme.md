@@ -13,20 +13,20 @@ This example tries to get as close to the Emotion.js DX as possible it adds nest
 ```javascript
 import {css} from 'cssed/macro'
 export default function App() {
-	return (
-		<div className={`app ${styles}`}>
-			Vite + React + 
-			<span>cssed</span>
-		</div>
-	)
+  return (
+    <div className={`app ${styles}`}>
+      Vite + React + 
+      <span>cssed</span>
+    </div>
+  )
 }
 
 let {styles} = css`
 :local(.styles) {  
-	color: red;
-	
-	span {
-		color: yellow;
-	}
+  color: red;
+  
+  span {
+    color: yellow;
+  }
  }`
 ```
