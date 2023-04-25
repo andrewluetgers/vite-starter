@@ -1,0 +1,13 @@
+
+
+:local(.scope) {
+	color: green;
+
+	span {
+		color: red;
+	}
+
+	p {
+		color: blue;
+	}
+}
