@@ -2,18 +2,15 @@
 
 const postcssConfig = {
 	parser: false,
-	map: false,
+	map: true,
 	plugins: {
-		'postcss-nested': {},
-		'postcss-modules': {
-			scopeBehaviour: 'global'
-		},
 		'postcss-preset-env': {
 			autoprefixer: {
 				flexbox: 'no-2009',
 			},
 			stage: 3
 		},
+		'postcss-nested': {},
 		'postcss-flexbugs-fixes': {},
 	}
 }

@@ -41,7 +41,7 @@ export default function App() {
 	)
 }
 
- let {styles} = css`
+let {styles} = css`
 :local(.styles) {
 
 	color: white;
