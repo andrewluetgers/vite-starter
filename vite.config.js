@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite'
+import {basename} from 'path'
+import {defineConfig} from 'vite'
 import react from '@vitejs/plugin-react'
 import macrosPlugin from 'vite-plugin-babel-macros'
 import svgr from 'vite-plugin-svgr'
-import {basename} from "path";
 
 
 // https://vitejs.dev/config/
@@ -26,7 +26,7 @@ export default defineConfig({
 						.split('.css')[0]
 
 				line = line ? `_${line}` : ''
-				name = name == 'styles' ? '' : `_${name}`
+				name = name === 'styles' ? '' : `_${name}`
 
 				// console.log({filename, file, line, name})
 				return `_${file}${line}${name}`;

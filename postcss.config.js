@@ -2,7 +2,7 @@
 
 const postcssConfig = {
 	parser: false,
-	map: true,
+	map: 'no-map',
 	plugins: {
 		'postcss-preset-env': {
 			autoprefixer: {
