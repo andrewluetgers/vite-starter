@@ -1,6 +1,6 @@
-import {useState} from 'react'
-import {ReactComponent as ReactLogo} from './assets/react.svg'
-import {css} from 'cssed/macro'
+import { useState } from 'react'
+import { css } from 'cssed'
+import ReactLogo from './assets/react.svg?react'
 import './App.css'
 
 
@@ -12,7 +12,6 @@ export default function App() {
 			<div>
 				<a href="https://vitejs.dev" target="_blank">
 					<img src="/vite.svg" className="logo vite" />
-
 				</a>
 				<a href="https://react.dev" target="_blank">
 					<ReactLogo className="logo react" />
@@ -42,29 +41,29 @@ export default function App() {
 }
 
 let {styles} = css`
-:local(.styles) {
+	:local(.styles) {
 
-	color: white;
+		color: white;
 
-	h1 {
-		font-style: italic;
+		h1 {
+			font-weight: bold;
+		}
+
+		.vite {
+			color: #ad4bfe;
+		}
+
+		.react {
+			color: #00d9ff;
+		}
+
+		span {
+			color: #daf788;
+		}
+
+		p {
+			color: #19a8ff;
+		}
 	}
-
-	.vite {
-		color: #ad4bfe;
-	}
-
-	.react {
-		color: #00d9ff;
-	}
-
-	span {
-		color: #daf788;
-	}
-
-	p {
-		color: #19a8ff;
-	}
-}
- `
+`
 

@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # cssed compilation artifacts
-.*.module.css
+.cssed

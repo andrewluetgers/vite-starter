@@ -10,8 +10,10 @@ const postcssConfig = {
 			},
 			stage: 3
 		},
-		'postcss-nested': {},
 		'postcss-flexbugs-fixes': {},
+		'tailwindcss/nesting': 'postcss-nested',
+		'tailwindcss': {},
+		'autoprefixer': {},
 	}
 }
 export default postcssConfig
